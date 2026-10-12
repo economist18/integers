@@ -173,3 +173,7 @@ ILP weight d·(73/d)^b0 with b0 = each word's own exact moment root (0.001371467
 - Others in the same window: #550 (eumemic) 0.001591045666134196, #554 (rohanarun) 0.001591209947088545, #555 (eumemic) bit c 0.001733052823 (complex still binds), #549 (chafreaky) static44 packing ceiling < 0.000399% headroom.
 - H3 is therefore an independent confirmation, not a record. Not submitted as a record; `submission/PR-H3-DESCRIPTION.md` retained for reference only.
 - `make -k verify` on the H3 branch was still running (frontier531 cold523 replay) at handoff with no failures up to that point; log runs/h3-make-verify.log (not committed; runs/ ignored).
+
+## make -k verify on the H3 branch (4f6e905c = main db0e57bc + #543 + #544 + package)
+- 74m26s, EXIT 2. The only failure is `positive-skip-build`: FileExistsError on build/positive-skip-exact/h23-clone-1, a stale artifact from this clone's earlier round-1 make verify. After removing that directory, `make verify-positive` passes (EXIT 0, 1m23s). All other sub-targets passed, including gen4-bank-verify and frontier531-verify (selected record 1517760977820331/10^18). joint-dual-verify no longer fails on this main.
+- Side effect: the run regenerates certificates/mixed-point-audit.json with a new hash for scripts/rational_span_frames.py (pre-existing drift on main, unrelated); restored with git checkout.

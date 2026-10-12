@@ -154,3 +154,10 @@ Durable contributions:
 - independent reproductions of #505, #508, #514, #541, #543, #544 and #548;
 - the diagnosed platform-float reproduction failures in #501 and #507;
 - the negative results above.
+
+**Repository checks on the H3 branch.**
+- `make -k verify` passed every target apart from one stale-artifact failure in
+  `positive-skip-build` (a leftover `build/` directory from round 1).
+- That target passes when rerun on its own.
+- The run also regenerates `certificates/mixed-point-audit.json`. Its old source hash is
+  pre-existing drift on main, so I restored the file.
