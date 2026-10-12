@@ -1,0 +1,110 @@
+[
+  {
+    "name": "pr544-full-verifier",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 420.41
+  },
+  {
+    "name": "pr543-full-verifier",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 258.4
+  },
+  {
+    "name": "apply-exact-lifts",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 0.55
+  },
+  {
+    "name": "complex-scalar-frame-transport",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 1.2
+  },
+  {
+    "name": "complex-emit-local",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 1.04
+  },
+  {
+    "name": "complex-independent-local",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 3.62
+  },
+  {
+    "name": "complex-normalized-wrappers",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 1.82
+  },
+  {
+    "name": "complex-every-local-phase",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 189.41
+  },
+  {
+    "name": "complex-bind-retained-data",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 2.14
+  },
+  {
+    "name": "complex-emit-whole-owners",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 4.51
+  },
+  {
+    "name": "complex-independent-owners-and-controls",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 9.88
+  },
+  {
+    "name": "complex-finite-invoice",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 0.97
+  },
+  {
+    "name": "complex-two-engine-endpoint",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 0.34
+  },
+  {
+    "name": "composition-assemble9",
+    "exit": 0,
+    "expected_failure": false,
+    "seconds": 0.28
+  },
+  {
+    "name": "neg-reversed-lift",
+    "exit": 1,
+    "expected_failure": true,
+    "seconds": 0.26
+  },
+  {
+    "name": "neg-stale-map-entry",
+    "exit": 1,
+    "expected_failure": true,
+    "seconds": 0.33
+  },
+  {
+    "name": "neg-non-nested-frame",
+    "exit": 1,
+    "expected_failure": true,
+    "seconds": 0.93
+  },
+  {
+    "name": "neg-unretimed-plan",
+    "exit": 1,
+    "expected_failure": true,
+    "seconds": 3.75
+  }
+]

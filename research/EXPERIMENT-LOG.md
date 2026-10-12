@@ -123,3 +123,47 @@ ILP weight d·(73/d)^b0 with b0 = each word's own exact moment root (0.001371467
 - `make -k verify-joint verify-pair verify-tests`: only that same failure; audit_joint_candidate, verify-pair, isolated tests and frozen patch checks pass.
 - `make gen4-bank-verify`: EXIT 0, 8m55s, κ 90446448750933/125000000000000000, 9 fresh stages, 9 omitted-stage controls rejected.
 - `check.py` (4 cases + controls): PASS, 4m04s.
+
+# ROUND 2 ("try again", 2026-10-12)
+
+## Frontier at start of round 2
+- main db0e57bc publishes reviewed κ 0.001517760977820331 (#531, direct-delivery 504 helpers, 112 ports).
+- Open: #534 (rohanarun) 0.001526158885117467 (SA frame lifts on #531); #535 (icekylinx) 0.001584931111785787 (rank-4 post-centre kernels; complex b 0.001589991533606044; bit-bound with #510 c 0.001587447106092548); #541 (Dugongue) 0.001587212454640692 (preload60 bit, c 0.001589735702947999); #542 (rohanarun draft) slice+causal-min bit c 0.0015895030.
+
+## Tool generalisation
+- retime_opt.Word reads v = len(ports) (112-port words). retime_ilp.py: env LIFTS=1 (each frame must contain its given frame; PR534's interface), AMBIENT.
+- Validation: model profile = repository profile for #531 and #535 words. **ILP (LIFTS) on #531's word returns exactly #534's 40-seed SA optimum {1:2220,2:368,3:460,4:168,5:168,6:56,7:8}** → #534 is optimal.
+
+## H2c complex — exact lifts retiming of #535's word: +gain
+- ILP optimum {1:2304,2:440,3:472,4:184,5:56,6:56,8:8} vs #535 {1:2208,2:728,3:184,4:280,5:56,6:56,8:8}; 416 gate frames lifted.
+- Feasibility pipeline (unmodified #531/#535 scripts): audit_and_transport (exact scalar both orientations) PASS; phases_delta 832 fresh exact edges + 2095 reused PASS; emit_local, adapters_local (Lemma A), audit_local (both orientations, 11 controls) PASS; prepare_supplier_base, emit_supplier_hosted (plan profile restated = idle + 72·new local), audit_supplier_hosted, invoice_final PASS; assemble_combined: **b′ = 0.001591248091486981105925** (vs 0.001589991533606044).
+
+## H2b bit — #541 preload60 ∘ #542 slice ∘ exact frames
+- bit_model.py reproduces #541's chain profile; bit fixed-order frame ILP (bit_ilp.py) on #541's word: rigid (143 free gates), optimum = given.
+- Naive #541∘#542 with #542's causal-minimum frames: c 0.0015879 (WORSE; causal-min undoes preloads).
+- Slice only + exact ILP (catalogue + all root-closed subspaces in windows): profile {1:1270,2:1320,3:50,4:170,6:130,8:9}, 11 frames changed, no new frames. Control: same ILP on sliced #510 beats #542's causal-min (−0.0609 vs ≈−0.045 fee).
+- Unmodified native C++ checks (legality, 960/1440 formal columns, 6+18 controls, interface, Gram, structural/mutable controls) PASS; global_k/adapt/parent audit/emit_k/hosted audit/assemble9 PASS (138240 whole residuals, 0 banks): **c′ = 0.001591129919227630331373**.
+- Assembly (h2/code/assemble_h2.py, adapted from #541 assemble_meta): κ = 0.001588602246663212 (bit binds).
+- **DUPLICATE**: #544 (chafreaky) reports exactly this κ and c (same bit delta 10(e1−e3−e4+e6)), with a better complex supplier (static44 b 0.001593245593667525). Not a record.
+
+## Round-2 frontier update (~04:00 UTC)
+- #543 (eumemic): 420-helper bit word c 0.001653826988146799 (nine-stage), κ complex-bound with #535.
+- #545 (DreamingOfClouds, draft): punctured 111-port bit c 0.0016594720 (stacked hosting caveat).
+- #546 (rohanarun draft): static44 + #542 bit κ 0.001587480974500277.
+- With c ≥ 1.65e-3 the complex side binds; best complex supplier is #544's static44 (b 0.0015932456).
+
+## H3 — exact lifts retiming of #544's static44 complex word + #543 bit (in progress)
+
+## H3 — exact lifts on #544 static44 + #543 R420 bit: VERIFIED, highest claim at certification
+- ILP (LIFTS=1, FIXED_A=0) on static44 word: 416 lifts; local {1:2300,2:440,3:472,4:184,5:56,6:56,8:8} (from {1:2204,2:728,3:184,4:280,...}); 34 components, gap 0.
+- Feasibility: full #531/#544 complex pipeline (audit_and_transport, emit_local, audit_local 11 controls, adapters, phases_full every edge, prepare base, emit owners with restated plan, owner audit + mutation controls, invoice) PASS; b″ = 1594507308884431019637/10^24.
+- #543 reproduced (verify.sh; nine-stage c 413456747036699736067/2.5e23; controls exact). #544 reproduced (κ 0.001588602246663212).
+- Composition via #543/#510 assemble9.py (unmodified): κ = 795984451416673/5e17 = 0.001591968902833346 (complex-bound), 47/47, controls; in-run controls reproduce #543's κ (pr535 b) and #547's first κ (pr544 b) exactly.
+- Package research/exact-retimed-static44 on branch main(db0e57bc)+#543+#544; final clean run `verify.py --work runs/h3-final`: EXIT 0, 900 s, 4 negative controls rejected, EXPECTED and manifest held.
+- Frontier at certification: #547 (draft, rohanarun) 0.001590984155135328 (#548 complex + R420); #548 (Dugongue) 0.001590591090759927; #544 0.001588602246663212. H3 is +0.0619% over #547.
+- Caveat: inherits #543's open phase-B interface question; with an undisputed-interface bit (c 0.0015911299) the bound is bit-bound and the complex gain does not raise κ.
+
+## H4 — exact lifts with #548's register versions / owner allocation: NEGATIVE
+- #548 local stages: static44 {1:2204,...} → lifted (PR534 port) {1:2284,2:456,3:488,4:168,...} → syndrome (same profile). Entropy fee: #548 lifted 19704.6/call vs exact 19690.8/call.
+- ILP lifts from #548's syndrome frames: no improvement (heuristic lifts lock in a worse configuration).
+- #548 idle remainders = #544's idle remainders; syndrome saves scalar ops only. Exact lifts + #548 idle gives the same b″ as H3. No b gain from composing.

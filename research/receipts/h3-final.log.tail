@@ -1,0 +1,24 @@
+PASS pr544-full-verifier
+PASS pr543-full-verifier
+PASS apply-exact-lifts
+PASS complex-scalar-frame-transport
+PASS complex-emit-local
+PASS complex-independent-local
+PASS complex-normalized-wrappers
+PASS complex-every-local-phase
+PASS complex-bind-retained-data
+PASS complex-emit-whole-owners
+PASS complex-independent-owners-and-controls
+PASS complex-finite-invoice
+PASS complex-two-engine-endpoint
+PASS composition-assemble9
+REJECTED (required) neg-reversed-lift
+REJECTED (required) neg-stale-map-entry
+REJECTED (required) neg-non-nested-frame
+REJECTED (required) neg-unretimed-plan
+{"status": "PASS_EXACT_RETIMED_STATIC44_WITH_R420", "kappa": "795984451416673/500000000000000000", "kappa_decimal": "0.001591968902833346", "binding_component": "complex", "seconds": 900.0}
+
+real	15m0.045s
+user	19m34.024s
+sys	0m27.491s
+EXIT 0

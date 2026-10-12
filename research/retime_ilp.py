@@ -7,7 +7,7 @@ if the frames differ (0 if equal), with nesting s_u <= s_v.  Pairs of two free g
 transportation linearisation y[u,v,s,s'] (tight).  Objective weight c(d) = d*(73/d)**b0.
 Usage: retime_ilp.py FULL-WORD.json.gz START_FRAMES.json|- b0 OUT.json [time_limit_per_component]
 """
-import json, gzip, sys, math, time
+import json, gzip, sys, math, time, os
 from collections import defaultdict
 import numpy as np
 from scipy.optimize import milp, LinearConstraint, Bounds
@@ -53,7 +53,7 @@ def main():
     w = json.loads(gzip.decompress(open(wpath, 'rb').read()))
     fr = json.load(open(frames)) if frames != '-' else None
     W = R.Word(w, fr and fr['A'], fr and fr['B'])
-    c = lambda d: d * (73 / d) ** b0
+    MAMB = float(os.environ.get('AMBIENT', '73')); c = lambda d: d * (MAMB / d) ** b0
     n = len(W.events); fixedset = W.fixed | set(W.forced)
     # global windows
     cur = {r: W.start[r] for r in range(W.n)}; Lg = [None] * n
@@ -75,6 +75,11 @@ def main():
         if g in fixedset: U = W.F[g]
         Ug[g] = U
         for r in regs: up[r] = U
+    if os.environ.get('LIFTS') == '1':  # interface of PR534: every frame must contain its given frame
+        for g in range(n):
+            if g not in fixedset:
+                Lg[g] = R.join(Lg[g], W.F[g])
+                assert R.inside(Lg[g], Ug[g]), ('given frame outside window', g)
     free = [g for g in range(n) if Lg[g] != Ug[g]]
     fs = set(free)
     const = {g: Lg[g] for g in range(n) if g not in fs}

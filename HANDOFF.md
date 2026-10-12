@@ -88,3 +88,56 @@ read from the rendered pages, not the API.
   per-entry checks and reproduces the publisher hashes.
 - The PR505, PR508 and PR514 web uploads omit dotfiles. A manifest-entry workaround was used only for
   #505 and #508's old manifest format; #514 ran unmodified.
+
+# ROUND 2 ("try again") — summary
+
+## Best verified candidate: H3, κ = 795984451416673/5·10¹⁷ = 0.001591968902833346 (complex-bound)
+
+- **Construction.** Exact lifts-only frame retiming of #544's static44 complex word: 416 lifts,
+  b = 1594507308884431019637/10²⁴. It is composed with #543's R420 bit word
+  (c = 0.001653826988146799) through #543/#510's own `assemble9.py`.
+- **Package.** `research/exact-retimed-static44/`, on an upstream branch built from main
+  `db0e57bc` + #543 `2065fe4f` + #544 `4858bb38`. The patch is
+  `submission/h3-patches/0003-…patch`, with `submission/PR-H3-DESCRIPTION.md` and
+  `submission/SUBMIT-H3.md`.
+- **Certification.** The final clean `verify.py` run passed in 900 s:
+  - #544's and #543's full verifiers, unmodified;
+  - the frozen lift application;
+  - the full complex pipeline on the changed word;
+  - two-engine pricing and the composition;
+  - 4 negative controls rejected.
+
+  Receipts are in `research/receipts/h3-final-*`.
+- **Frontier at certification.** #547 (draft) 0.001590984155135328, #548 0.001590591090759927,
+  #544 0.001588602246663212, main 0.001517760977820331. H3 is +0.0619% over #547 and +4.889% over
+  main.
+- **Conditional.** H3 inherits every supplier contract plus **#543's open phase-B interface
+  question**. With an undisputed-interface bit supplier, the bound is bit-bound and this complex
+  gain does not raise κ.
+
+## Other round-2 results
+
+- **H2 (#535 exact lifts + #541∘#542 bit with exact frames).** Verified, κ 0.001588602246663212.
+  It **duplicates #544** (same bit delta), so it is not a record.
+- **Exact ILP validation.** It reproduces #534's 40-seed SA optimum on #531's word exactly.
+- **Bit words.** Fixed-order frame assignment is rigid: optimum = given on #541. The exact ILP beats
+  #542's causal-minimum rule on the sliced #510 word (fee −0.0609 vs ≈ −0.045).
+- **H4 (#548 register versions/allocation + exact lifts).** No b gain: #548's idle = #544's, and the
+  syndrome step doesn't change the profile.
+
+## Reproductions this round
+
+All on Linux, with Python 3.14.6 unless noted:
+- #541 PASS;
+- #543 PASS;
+- #544 PASS;
+- #548 complex local/global PASS (Py3.14).
+
+## Next experiments
+
+1. **Exact lifts for any new complex word.** It takes about 1 min: `discovery/retime_ilp.py`
+   with `LIFTS=1 FIXED_A=0`. Heuristic lift searches leave about +0.08% on the table.
+2. **Bit side within the undisputed interface.** Trace refinements (preload/slice) plus exact
+   frames. Fixed-order frames are exhausted, so gains need more trace moves.
+3. **Settle #543's phase-B question.** If accepted, the complex side binds and complex
+   improvements pay off directly.

@@ -66,7 +66,7 @@ def cost(d):  # first-order moment proxy per paid child of rank d
 class Word:
     def __init__(self, w, frames_A=None, frames_B=None):
         self.w = w
-        v = 120; self.v = v; n = 240 + w['report']['R']; self.n = n
+        v = len(w['ports']); self.v = v; n = 2 * v + w['report']['R']; self.n = n
         self.events = []  # (part, idx, regs)
         for part in ('A', 'B'):
             for i, e in enumerate(w[part]):

@@ -1,0 +1,152 @@
+{
+  "status": "PASS_EXACT_RETIMED_STATIC44_WITH_R420",
+  "kappa": "795984451416673/500000000000000000",
+  "kappa_decimal": "0.001591968902833346",
+  "binding_component": "complex",
+  "complex_lower": "1594507308884431019637/1000000000000000000000000",
+  "bit_lower": "413456747036699736067/250000000000000000000000",
+  "complex_profile": {
+    "1": 165600,
+    "2": 32128,
+    "3": 35907,
+    "4": 13248,
+    "5": 4032,
+    "6": 4032,
+    "7": 208,
+    "8": 576,
+    "39": 1,
+    "48": 1660
+  },
+  "local_profile": {
+    "1": 2300,
+    "2": 440,
+    "3": 472,
+    "4": 184,
+    "5": 56,
+    "6": 56,
+    "8": 8
+  },
+  "controls": {
+    "pr544_b_with_r420": "397677800014309/250000000000000000",
+    "pr535_b_with_r420": "793733736881443/500000000000000000"
+  },
+  "outer_constraints": 47,
+  "outer_controls": [
+    "next_grid",
+    "zero_eta",
+    "zero_beta",
+    "unit_beta"
+  ],
+  "steps": [
+    {
+      "name": "pr544-full-verifier",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 420.41
+    },
+    {
+      "name": "pr543-full-verifier",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 258.4
+    },
+    {
+      "name": "apply-exact-lifts",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 0.55
+    },
+    {
+      "name": "complex-scalar-frame-transport",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 1.2
+    },
+    {
+      "name": "complex-emit-local",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 1.04
+    },
+    {
+      "name": "complex-independent-local",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 3.62
+    },
+    {
+      "name": "complex-normalized-wrappers",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 1.82
+    },
+    {
+      "name": "complex-every-local-phase",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 189.41
+    },
+    {
+      "name": "complex-bind-retained-data",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 2.14
+    },
+    {
+      "name": "complex-emit-whole-owners",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 4.51
+    },
+    {
+      "name": "complex-independent-owners-and-controls",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 9.88
+    },
+    {
+      "name": "complex-finite-invoice",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 0.97
+    },
+    {
+      "name": "complex-two-engine-endpoint",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 0.34
+    },
+    {
+      "name": "composition-assemble9",
+      "exit": 0,
+      "expected_failure": false,
+      "seconds": 0.28
+    },
+    {
+      "name": "neg-reversed-lift",
+      "exit": 1,
+      "expected_failure": true,
+      "seconds": 0.26
+    },
+    {
+      "name": "neg-stale-map-entry",
+      "exit": 1,
+      "expected_failure": true,
+      "seconds": 0.33
+    },
+    {
+      "name": "neg-non-nested-frame",
+      "exit": 1,
+      "expected_failure": true,
+      "seconds": 0.93
+    },
+    {
+      "name": "neg-unretimed-plan",
+      "exit": 1,
+      "expected_failure": true,
+      "seconds": 3.75
+    }
+  ],
+  "seconds": 900.0,
+  "python": "3.14.6"
+}
