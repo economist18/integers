@@ -15,6 +15,7 @@ Detailed log: `research/EXPERIMENT-LOG.md`. Tools: `research/*.py`. H1 package: 
 | #508 coordinated gauge async (Dugongue) | `3213fc13…` κ 1.372554837726243e-3 |
 | #473 partial-own async (rohanarun) | `c0df2ea3…` κ 1.388049083313897e-3; #512 (chafreaky) fresh certificate of the same κ |
 | **#514 partial-own + collapse + 92 pivots + async (Dugongue)** | `246bfacd…` **κ 1.391523459591829e-3 — strongest undisputed claim at handoff** |
+| **Newest (≈01:00 UTC Oct 12, not reproduced here)** | #527/#473 (rohanarun, 2080903b / c26b3cc7): κ 0.001467289440740487 (rank-sector factory + 112-port restriction); #523 (a900f98b): κ 0.001457945761723368 (punctured 112-port witness); #525: "exact fixed-word packing ceiling" |
 | disputed split-residual line | #448/#480/#494/#499 (κ up to 1.4529e-3), single-stream register objection unresolved |
 
 PR bodies were read from github.com pages (WebFetch). The GitHub API is not reachable for this
@@ -60,9 +61,12 @@ read from the rendered pages, not the API.
 1. Exact ILP retiming is now done for #484/#501, #508, #507 and #514 words: all already optimal.
    Any new word (new kernel/gauge/factory) should be pushed through `research/exact-retiming-optimality/code/retime_ilp.py`
    before transferring old body frames — it costs seconds.
-2. Gauge-selection search with exact retiming as the inner solver and width-aware packing cost.
+2. Port the ILP model to the 112-port words of #523/#527. `retime_model.Word` hardcodes v=120 and
+   n=240+R; parametrise them from `len(w['ports'])`. Then check whether their retimings are optimal.
+   This costs minutes once ported.
+3. Gauge-selection search with exact retiming as the inner solver and width-aware packing cost.
    #508 found one coordinated 4-gauge collapse; its screens cover 382 single and 20 coordinated choices.
-3. Settle the split-residual (multi-stream register) interface question. It is worth more than any
+4. Settle the split-residual (multi-stream register) interface question. It is worth more than any
    local tweak.
 
 ## Deliverables
