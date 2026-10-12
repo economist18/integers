@@ -1,0 +1,322 @@
+SS: exact path excess rejects the specified in-place family for kappa >= 2^-25.
+python3 scripts/audit_quadratic_affine.py
+PASS: twelve exact quadratic-affine core rejections, including Gaussian rank-two labels.
+python3 scripts/audit_signed_sparse.py
+PASS signed-sparse central factors and raw shared compiler ledger; no new kappa.
+Best scanned sufficient side ratio: 5.555500183623842
+python3 scripts/audit_positive_side.py
+Checked signed side: 4 2 [33, 30]
+Checked signed side: 5 2 [97, 70]
+Checked signed side: 4 4 [22, 20]
+Checked signed side: 5 4 [110, 100]
+Checked signed side: 6 4 [1600, 1080]
+Checked signed side: 8 8 [1764, 1200]
+PASS positive-definite compressed side compiler and bounded controls; no new kappa.
+python3 scripts/audit_parity_side.py
+Checked parity side: 8 724 938
+Checked parity side: 10 2271 3283
+Checked parity side: 26 82720 308336
+PASS scoped parity-side obstruction and exact repair cost; no new kappa.
+python3 scripts/audit_prime_subset_limits.py
+PASS common-subset prime-power family cannot reach 2^-26; best finite optimistic ceiling 3 29 7.828997214376574e-09
+make[1]: Leaving directory '/home/user/integer-mult-bounds'
+make verify-strips
+make[1]: Entering directory '/home/user/integer-mult-bounds'
+python3 research/skip-strips/producer.py
+Rebuilding scalar graph, original labels and fixed profiles, h=23
+profiles 10000 of 158626
+profiles 20000 of 158626
+profiles 30000 of 158626
+profiles 40000 of 158626
+profiles 50000 of 158626
+profiles 60000 of 158626
+CRT matrices 5642 differing modular profiles 0
+RANKONE h 23 longest 21 output /tmp/copied-fixed-_nrrf124/h23.bin.round3_rankone_certified_profiles.json
+PASS complete physical timeline and every dirty basis vector, both orientations h=23
+PASS complete h=23 supports, all matching uses, rank count and CRT profiles
+Rebuilding scalar graph, original labels and fixed profiles, h=25
+profiles 10000 of 211184
+profiles 20000 of 211184
+profiles 30000 of 211184
+profiles 40000 of 211184
+profiles 50000 of 211184
+profiles 60000 of 211184
+profiles 70000 of 211184
+profiles 80000 of 211184
+CRT matrices 7434 differing modular profiles 0
+RANKONE h 25 longest 23 output /tmp/copied-fixed-_nrrf124/h25.bin.round3_rankone_certified_profiles.json
+PASS complete physical timeline and every dirty basis vector, both orientations h=25
+PASS complete h=25 supports, all matching uses, rank count and CRT profiles
+Checking all 4,073,300 actual fixed-basis data pairs
+checked first triples 250 of 1771
+checked first triples 500 of 1771
+checked first triples 750 of 1771
+checked first triples 1000 of 1771
+checked first triples 1250 of 1771
+checked first triples 1500 of 1771
+checked first triples 1750 of 1771
+PASS all data pairs; ten primary-prime failures recovered over Q
+python3 research/skip-strips/audit.py
+PASS independent exact projector audit: 90 envelopes
+python3 research/skip-strips/verify.py --output research/skip-strips/certificate.json
+PASS conditional kappa=140567/3125000000; bit saving=4498347/100000000000
+47 strict inequalities; seven margins; all-exact enclosures; inherited balanced assembly
+cd research/skip-strips && python3 -m unittest discover -s ../../tests -p 'test_skip_strips.py' -v
+test_all_strict_constraints_and_dyadic_bracket (test_skip_strips.SkipStripTests.test_all_strict_constraints_and_dyadic_bracket) ... ok
+test_assembly_boundary_rejected (test_skip_strips.SkipStripTests.test_assembly_boundary_rejected) ... ok
+test_balanced_transfer_negative_controls (test_skip_strips.SkipStripTests.test_balanced_transfer_negative_controls) ... ok
+test_corrupted_pair_coverage_rejected (test_skip_strips.SkipStripTests.test_corrupted_pair_coverage_rejected) ... ok
+test_deterministic_prime_and_minor_gaps (test_skip_strips.SkipStripTests.test_deterministic_prime_and_minor_gaps) ... ok
+test_exact_recovery_explains_primary_modular_failures (test_skip_strips.SkipStripTests.test_exact_recovery_explains_primary_modular_failures) ... ok
+test_float_saving_rejected (test_skip_strips.SkipStripTests.test_float_saving_rejected) ... ok
+test_frozen_certificate (test_skip_strips.SkipStripTests.test_frozen_certificate) ... ok
+test_independent_cost_rows (test_skip_strips.SkipStripTests.test_independent_cost_rows) ... ok
+test_mass_corruption_rejected (test_skip_strips.SkipStripTests.test_mass_corruption_rejected) ... ok
+test_mismatched_source_hash_rejected (test_skip_strips.SkipStripTests.test_mismatched_source_hash_rejected) ... ok
+test_omitted_paid_copy_detected (test_skip_strips.SkipStripTests.test_omitted_paid_copy_detected) ... ok
+test_pinned_links_use_distinct_donors_and_uses (test_skip_strips.SkipStripTests.test_pinned_links_use_distinct_donors_and_uses) ... ok
+test_real_lower_bound_exclusions (test_skip_strips.SkipStripTests.test_real_lower_bound_exclusions) ... ok
+test_recovery_and_every_pair_charged (test_skip_strips.SkipStripTests.test_recovery_and_every_pair_charged) ... ok
+test_restriction_tree_mutation_rejected (test_skip_strips.SkipStripTests.test_restriction_tree_mutation_rejected) ... ok
+test_skip_layout_is_exact_leave_one_out (test_skip_strips.SkipStripTests.test_skip_layout_is_exact_leave_one_out) ... ok
+test_skip_layout_nests_prefix_consumers (test_skip_strips.SkipStripTests.test_skip_layout_nests_prefix_consumers) ... ok
+test_skip_strips_reduce_physical_roles (test_skip_strips.SkipStripTests.test_skip_strips_reduce_physical_roles) ... ok
+test_zero_recovered_pivot_rejected (test_skip_strips.SkipStripTests.test_zero_recovered_pivot_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.466s
+
+OK
+python3 research/skip-suffix/producer.py
+Rebuilding scalar graph, original labels and fixed profiles, h=23
+profiles 10000 of 158341
+profiles 20000 of 158341
+profiles 30000 of 158341
+profiles 40000 of 158341
+profiles 50000 of 158341
+profiles 60000 of 158341
+CRT matrices 5379 differing modular profiles 0
+RANKONE h 23 longest 21 output /tmp/copied-fixed-hnzkmlrq/h23.bin.round3_rankone_certified_profiles.json
+PASS complete physical timeline and every dirty basis vector, both orientations h=23
+PASS complete h=23 supports, all matching uses, rank count and CRT profiles
+Rebuilding scalar graph, original labels and fixed profiles, h=25
+profiles 10000 of 210819
+profiles 20000 of 210819
+profiles 30000 of 210819
+profiles 40000 of 210819
+profiles 50000 of 210819
+profiles 60000 of 210819
+profiles 70000 of 210819
+profiles 80000 of 210819
+CRT matrices 7179 differing modular profiles 0
+RANKONE h 25 longest 23 output /tmp/copied-fixed-hnzkmlrq/h25.bin.round3_rankone_certified_profiles.json
+PASS complete physical timeline and every dirty basis vector, both orientations h=25
+PASS complete h=25 supports, all matching uses, rank count and CRT profiles
+Checking all 4,073,300 actual fixed-basis data pairs
+PASS all data pairs; ten primary-prime failures recovered over Q
+python3 research/skip-suffix/audit.py
+PASS independent exact projector audit: 90 envelopes
+python3 research/skip-suffix/verify.py --output research/skip-suffix/certificate.json
+PASS conditional kappa=4541011/100000000000; bit saving=2270609/50000000000
+47 strict inequalities; seven margins; all-exact enclosures; inherited balanced assembly
+cd research/skip-suffix && python3 -m unittest discover -s ../../tests -p 'test_skip_suffix.py' -v
+test_all_strict_constraints_and_dyadic_bracket (test_skip_suffix.SkipSuffixTests.test_all_strict_constraints_and_dyadic_bracket) ... ok
+test_assembly_boundary_rejected (test_skip_suffix.SkipSuffixTests.test_assembly_boundary_rejected) ... ok
+test_balanced_transfer_negative_controls (test_skip_suffix.SkipSuffixTests.test_balanced_transfer_negative_controls) ... ok
+test_corrupted_pair_coverage_rejected (test_skip_suffix.SkipSuffixTests.test_corrupted_pair_coverage_rejected) ... ok
+test_deterministic_prime_and_minor_gaps (test_skip_suffix.SkipSuffixTests.test_deterministic_prime_and_minor_gaps) ... ok
+test_exact_recovery_explains_primary_modular_failures (test_skip_suffix.SkipSuffixTests.test_exact_recovery_explains_primary_modular_failures) ... ok
+test_float_saving_rejected (test_skip_suffix.SkipSuffixTests.test_float_saving_rejected) ... ok
+test_frozen_certificate (test_skip_suffix.SkipSuffixTests.test_frozen_certificate) ... ok
+test_independent_cost_rows (test_skip_suffix.SkipSuffixTests.test_independent_cost_rows) ... ok
+test_mass_corruption_rejected (test_skip_suffix.SkipSuffixTests.test_mass_corruption_rejected) ... ok
+test_mismatched_source_hash_rejected (test_skip_suffix.SkipSuffixTests.test_mismatched_source_hash_rejected) ... ok
+test_omitted_paid_copy_detected (test_skip_suffix.SkipSuffixTests.test_omitted_paid_copy_detected) ... ok
+test_pinned_links_use_distinct_donors_and_uses (test_skip_suffix.SkipSuffixTests.test_pinned_links_use_distinct_donors_and_uses) ... ok
+test_real_lower_bound_exclusions (test_skip_suffix.SkipSuffixTests.test_real_lower_bound_exclusions) ... ok
+test_recovery_and_every_pair_charged (test_skip_suffix.SkipSuffixTests.test_recovery_and_every_pair_charged) ... ok
+test_restriction_tree_mutation_rejected (test_skip_suffix.SkipSuffixTests.test_restriction_tree_mutation_rejected) ... ok
+test_skip_layout_is_exact_leave_one_out (test_skip_suffix.SkipSuffixTests.test_skip_layout_is_exact_leave_one_out) ... ok
+test_skip_layout_nests_prefix_consumers (test_skip_suffix.SkipSuffixTests.test_skip_layout_nests_prefix_consumers) ... ok
+test_skip_strips_reduce_physical_roles (test_skip_suffix.SkipSuffixTests.test_skip_strips_reduce_physical_roles) ... ok
+test_zero_recovered_pivot_rejected (test_skip_suffix.SkipSuffixTests.test_zero_recovered_pivot_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.403s
+
+OK
+make[1]: Leaving directory '/home/user/integer-mult-bounds'
+make verify-clones
+make[1]: Entering directory '/home/user/integer-mult-bounds'
+python3 research/skip-clones/producer.py
+Rebuilding cloned PR53 producer h=23
+profiles 10000 of 158878
+profiles 20000 of 158878
+profiles 30000 of 158878
+profiles 40000 of 158878
+profiles 50000 of 158878
+profiles 60000 of 158878
+CRT matrices 5631 differing modular profiles 0
+RANKONE h 23 longest 21 output /tmp/skip-clone-producers-fzw81je2/h23.bin.round3_rankone_certified_profiles.json
+PASS h=23 scalar, dense audit, pinned-links profile, independent recount, full timeline and dirty basis (both orientations)
+Rebuilding cloned PR53 producer h=25
+profiles 10000 of 211537
+profiles 20000 of 211537
+profiles 30000 of 211537
+profiles 40000 of 211537
+profiles 50000 of 211537
+profiles 60000 of 211537
+profiles 70000 of 211537
+profiles 80000 of 211537
+CRT matrices 7434 differing modular profiles 0
+RANKONE h 25 longest 23 output /tmp/skip-clone-producers-fzw81je2/h25.bin.round3_rankone_certified_profiles.json
+PASS h=25 scalar, dense audit, pinned-links profile, independent recount, full timeline and dirty basis (both orientations)
+python3 research/skip-clones/witness.py --output research/skip-clones/certificate.json
+PASS conditional kappa=141532521/3125000000000; 47 strict inequalities and seven margins
+python3 -m unittest discover -s tests -p 'test_skip_clones.py' -v
+test_clone_jobs_and_graph_code_require_current_source_pins (test_skip_clones.SkipCloneCertificateTests.test_clone_jobs_and_graph_code_require_current_source_pins) ... ok
+test_exact_certificate_and_strict_pr53_improvement (test_skip_clones.SkipCloneCertificateTests.test_exact_certificate_and_strict_pr53_improvement) ... ok
+test_profile_mass_and_compensated_negative_blocks_rejected (test_skip_clones.SkipCloneCertificateTests.test_profile_mass_and_compensated_negative_blocks_rejected) ... ok
+test_clone_replaces_the_whole_continuation_chain (test_skip_clones.WholeChainCloneTests.test_clone_replaces_the_whole_continuation_chain) ... ok
+test_declared_addition_and_role_counts_cannot_override_actual_graph (test_skip_clones.WholeChainCloneTests.test_declared_addition_and_role_counts_cannot_override_actual_graph) ... ok
+test_invalid_parent_and_provider_are_rejected (test_skip_clones.WholeChainCloneTests.test_invalid_parent_and_provider_are_rejected) ... ok
+test_named_provider_operand_must_partition_the_parent_exactly (test_skip_clones.WholeChainCloneTests.test_named_provider_operand_must_partition_the_parent_exactly) ... ok
+test_original_scalar_frames_are_preserved_in_every_round (test_skip_clones.WholeChainCloneTests.test_original_scalar_frames_are_preserved_in_every_round) ... ok
+test_provider_capacity_and_matching_collisions_are_rejected (test_skip_clones.WholeChainCloneTests.test_provider_capacity_and_matching_collisions_are_rejected) ... ok
+test_rebuilt_finite_fixtures_have_expected_clone_and_role_counts (test_skip_clones.WholeChainCloneTests.test_rebuilt_finite_fixtures_have_expected_clone_and_role_counts) ... ok
+test_wrong_first_chain_use_and_stale_graph_pins_are_rejected (test_skip_clones.WholeChainCloneTests.test_wrong_first_chain_use_and_stale_graph_pins_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 27.436s
+
+OK
+python3 research/split-skip/producer.py --work-dir build/split-skip --output build/split-skip-receipt.json
+Rebuilding every scalar sum, physical use and ordered profile h=23
+profiles 10000 of 161761
+profiles 20000 of 161761
+profiles 30000 of 161761
+profiles 40000 of 161761
+profiles 50000 of 161761
+CRT matrices 5629 differing modular profiles 0
+RANKONE h 23 longest 21 output build/split-skip/h23.bin.round3_rankone_certified_profiles.json
+PASS exact supports, carrier uses, CRT profiles and complete dirty basis h=23
+Rebuilding every scalar sum, physical use and ordered profile h=25
+profiles 10000 of 215237
+profiles 20000 of 215237
+profiles 30000 of 215237
+profiles 40000 of 215237
+profiles 50000 of 215237
+profiles 60000 of 215237
+profiles 70000 of 215237
+profiles 80000 of 215237
+CRT matrices 7240 differing modular profiles 0
+RANKONE h 25 longest 23 output build/split-skip/h25.bin.round3_rankone_certified_profiles.json
+PASS exact supports, carrier uses, CRT profiles and complete dirty basis h=25
+Rechecking every fixed-basis data pair
+checked first triples 250 of 1771
+checked first triples 500 of 1771
+checked first triples 750 of 1771
+checked first triples 1000 of 1771
+checked first triples 1250 of 1771
+checked first triples 1500 of 1771
+checked first triples 1750 of 1771
+PASS all 4,073,300 pairs including ten exact rational recoveries
+python3 research/split-skip/witness.py
+PASS kappa=4598878089/100000000000000 = 4.598878089e-05; 47 constraints; seven margins
+python3 research/split-skip/independent_arithmetic.py
+PASS independent rational moment and seven margins
+W=156805076; bit=1149772399/25000000000000; kappa=4598878089/100000000000000
+moment gap=1.150279201787867e-15; absorption gap=4.62457962748566e-15
+python3 -m unittest discover -s tests -p 'test_split_skip.py' -v
+test_corrupted_profile_rejected (test_split_skip.SplitSkipTests.test_corrupted_profile_rejected) ... ok
+test_duplicate_clone_provider_rejected (test_split_skip.SplitSkipTests.test_duplicate_clone_provider_rejected) ... ok
+test_general_singleton_pair_scalar_identity (test_split_skip.SplitSkipTests.test_general_singleton_pair_scalar_identity) ... ok
+test_independent_exact_arithmetic (test_split_skip.SplitSkipTests.test_independent_exact_arithmetic) ... PASS independent rational moment and seven margins
+W=156805076; bit=1149772399/25000000000000; kappa=4598878089/100000000000000
+moment gap=1.150279201787867e-15; absorption gap=4.62457962748566e-15
+ok
+test_invalid_permutations_rejected (test_split_skip.SplitSkipTests.test_invalid_permutations_rejected) ... ok
+test_overlapping_clone_partition_rejected (test_split_skip.SplitSkipTests.test_overlapping_clone_partition_rejected) ... ok
+test_partial_clone_chain_rejected (test_split_skip.SplitSkipTests.test_partial_clone_chain_rejected) ... ok
+test_rank_mass_and_paid_endpoint (test_split_skip.SplitSkipTests.test_rank_mass_and_paid_endpoint) ... ok
+test_stale_graph_pin_rejected (test_split_skip.SplitSkipTests.test_stale_graph_pin_rejected) ... ok
+test_strict_grid_and_final_margins (test_split_skip.SplitSkipTests.test_strict_grid_and_final_margins) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 4.023s
+
+OK
+make[1]: Leaving directory '/home/user/integer-mult-bounds'
+make verify-positive
+make[1]: Entering directory '/home/user/integer-mult-bounds'
+python3 scripts/audit_positive_skip_exact.py
+PASS h=23 R 32946 -> 32693 after 2 clone rounds; digests, profile and PR #51 compiler check
+PASS h=25 R 43409 -> 43009 after 2 clone rounds; digests, profile and PR #51 compiler check
+frames 30358 matrices 85355 primes 10 replays 290190 bound_bits 293
+prime 1 / 10 matrices 85355 seconds 2.84004
+prime 2 / 10 matrices 55073 seconds 3.45783
+prime 3 / 10 matrices 35168 seconds 3.92432
+prime 4 / 10 matrices 29474 seconds 4.34282
+prime 5 / 10 matrices 25391 seconds 4.71943
+prime 6 / 10 matrices 22835 seconds 5.05804
+prime 7 / 10 matrices 18012 seconds 5.33238
+prime 8 / 10 matrices 13210 seconds 5.55742
+prime 9 / 10 matrices 5643 seconds 5.64487
+prime 10 / 10 matrices 29 seconds 5.64669
+h=23 basis=fixed R=32693 exact_rank_mass=752951 matrices=85355
+PASS h=23: exact enlarged-frame profile, 10 primes
+frames 40361 matrices 113893 primes 11 replays 424217 bound_bits 316
+prime 1 / 11 matrices 113893 seconds 4.19472
+prime 2 / 11 matrices 72455 seconds 5.06119
+prime 3 / 11 matrices 49334 seconds 5.82451
+prime 4 / 11 matrices 40952 seconds 6.48235
+prime 5 / 11 matrices 36197 seconds 7.11067
+prime 6 / 11 matrices 32113 seconds 7.66214
+prime 7 / 11 matrices 29038 seconds 8.16974
+prime 8 / 11 matrices 22724 seconds 8.56453
+prime 9 / 11 matrices 18980 seconds 8.89785
+prime 10 / 11 matrices 8500 seconds 9.04148
+prime 11 / 11 matrices 31 seconds 9.04377
+h=25 basis=fixed R=43009 exact_rank_mass=1076425 matrices=113893
+PASS h=25: exact enlarged-frame profile, 11 primes
+python3 research/positive-skip/witness.py --output research/positive-skip/certificate.json
+PASS conditional kappa=284291961/6250000000000; bit saving=454887829/10000000000000
+47 strict inequalities; seven margins; next grid points rejected; PR53 and PR54 networks excluded
+python3 -m unittest discover -s tests -p 'test_positive_skip.py' -v
+test_assembly (test_positive_skip.PositiveSkipTests.test_assembly) ... ok
+test_beats_pr53_and_pr54 (test_positive_skip.PositiveSkipTests.test_beats_pr53_and_pr54) ... ok
+test_frozen_certificate (test_positive_skip.PositiveSkipTests.test_frozen_certificate) ... ok
+test_roles (test_positive_skip.PositiveSkipTests.test_roles) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.274s
+
+OK
+make[1]: Leaving directory '/home/user/integer-mult-bounds'
+make verify-joint
+make[1]: Entering directory '/home/user/integer-mult-bounds'
+python3 scripts/experiments/verify_skip_frame.py
+PASS h=23: full dirty basis, exact frame path, every fixed-basis profile
+PASS h=25: full dirty basis, exact frame path, every fixed-basis profile
+PASS conditional kappa=4669442391/100000000000000; bit saving=116741511/2500000000000
+PASS exact recurrence, 47 strict inequalities, seven margins, eventual cutoffs
+python3 scripts/experiments/verify_joint_dual.py
+Traceback (most recent call last):
+  File "/home/user/integer-mult-bounds/scripts/experiments/verify_joint_dual.py", line 78, in <module>
+    verify()
+    ~~~~~~^^
+  File "/home/user/integer-mult-bounds/scripts/experiments/verify_joint_dual.py", line 28, in verify
+    check_sources()
+    ~~~~~~~~~~~~~^^
+  File "/home/user/integer-mult-bounds/scripts/experiments/joint_dual_compose.py", line 70, in check_sources
+    assert sha256((ROOT/name).read_bytes()).hexdigest() == digest, name
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Makefile
+make[1]: *** [Makefile:403: joint-dual-verify] Error 1
+make[1]: Leaving directory '/home/user/integer-mult-bounds'
+make: *** [Makefile:30: verify] Error 2
+
+real	67m36.688s
+user	67m7.155s
+sys	1m51.214s
+EXIT 2

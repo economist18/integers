@@ -1,0 +1,32 @@
+RUN partial-factory
+PASS partial-factory
+RUN construct-kernel92
+PASS construct-kernel92
+RUN kernel-scalar-controls
+PASS kernel-scalar-controls
+RUN scalar
+PASS scalar
+RUN emit-local
+PASS emit-local
+RUN phases
+PASS phases
+RUN adapters
+PASS adapters
+RUN parent-integration
+PASS parent-integration
+RUN parent-replay
+PASS parent-replay
+RUN emit-async
+PASS emit-async
+RUN independent-async
+PASS independent-async
+RUN invoice
+PASS invoice
+RUN two-moments-assembly
+PASS two-moments-assembly
+PASS_CONDITIONAL_ASYNCHRONOUS_COMPLEX_DERIVATIVE kappa 0.001391523459591829
+
+real	5m3.520s
+user	4m57.732s
+sys	0m1.273s
+EXIT 0

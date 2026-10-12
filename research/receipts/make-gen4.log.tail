@@ -1,0 +1,36 @@
+python3 -B scripts/verify_selected_result.py
+PASS selected record, exact kappa, original source inventory and proof supplement: 90446448750933/125000000000000000
+00:46:47 UTC  Admitting the pinned gen4 physical bit word
+00:46:47 UTC  Running the PR168-v4 package checker on the gen4 virtual word
+00:47:46 UTC  Running the PR200 physical-word proof on the gen4 physical word
+00:48:13 UTC  virtual PASS 86.0s
+00:48:38 UTC  raw PASS 13.3s
+PASS independent F2 event observer 2137016 e9f6cfba8609197b261dc37a4bcc731d20d8f3676ea1bb592f07e88b27de002b {3: 1760, 2: 1510656, 1: 624600}
+PASS PHYSICAL 2137016 records 2233133 rankmass 425742 tagged 6ec66be3ede255b2c6bb3004d2adb991efcdd323267f6b7beea21b83e9dc46c6
+PASS parity fusion 626360 ADDs 722477 records
+PASS concave descent retiming 880 gates 93320 paid calls 722477 records
+00:50:05 UTC  bit physical/global/geometry PASS
+00:50:05 UTC  Checking all19930 source, target and arbitrary dirty F2 columns
+00:50:08 UTC  Checking independent literal physical projection and inverse
+00:50:18 UTC  Checking the signed integer source decoder and dirty restoration
+00:52:46 UTC  scalar PASS 160.8s
+00:52:53 UTC  Validated 5000 exact basis determinants
+00:52:57 UTC  Validated 10000 exact basis determinants
+00:53:00 UTC  Validated 15000 exact basis determinants
+00:53:04 UTC  Validated 20000 exact basis determinants
+00:53:07 UTC  Validated 25000 exact basis determinants
+00:53:09 UTC  primes PASS 22.4s
+00:54:35 UTC  banks PASS 85.8s
+00:54:35 UTC  Checking every complex source label and paid child.
+00:54:36 UTC  Deriving both complex scalar words and temporary lifetimes.
+00:54:41 UTC  Merging scalar events, exact frames and all final climbs.
+00:55:39 UTC  Recomputing complex cover, router, precision and row inequalities.
+00:55:40 UTC  complex PASS 65.1s
+00:55:41 UTC  math PASS 0.9s
+00:55:41 UTC  finite PASS 0.2s
+{"status": "PASS_IMMUTABLE_PARITY_FUSED_GEN4_FIVE_STAGE_BANKED_CONSTRUCTION", "manifest_sha256": "99e202d9ffe5baf89e02796edbfc7095b2b227622eccf7b61afa01fd61aeb385", "files": 112, "kappa": "90446448750933/125000000000000000", "kappa_scientific": "7.235715900074640e-04", "fresh_stages": ["banks", "bit", "complex", "finite", "math", "primes", "raw", "scalar", "virtual"], "inputs_unchanged": true, "timings": {"virtual": 86.02522111500002, "raw": 13.31640443499964, "bit": 87.91954098199858, "scalar": 160.79360603399982, "primes": 22.427728680000655, "banks": 85.82792642700042, "complex": 65.10555986200052, "math": 0.8954823599997326, "finite": 0.2100464520008245}, "seconds": 533.7667540839993, "negative_controls": ["omitted banks stage", "omitted bit stage", "omitted complex stage", "omitted finite stage", "omitted math stage", "omitted primes stage", "omitted raw stage", "omitted scalar stage", "omitted virtual stage"]}
+
+real	8m55.011s
+user	8m40.086s
+sys	0m9.523s
+EXIT 0

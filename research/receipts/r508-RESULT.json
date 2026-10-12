@@ -1,0 +1,73 @@
+{
+  "status": "PASS_CONDITIONAL_ASYNCHRONOUS_COMPLEX_DERIVATIVE",
+  "kappa": "1372554837726243/1000000000000000000",
+  "kappa_decimal": "0.001372554837726243",
+  "complex_lower": "1374441333828159774039/1000000000000000000000000",
+  "bit_lower": "391360506745414227149/250000000000000000000000",
+  "template_sha256": "3a3e6f87997f15815d11b1ee389d0783482e0eca087fff8ebd29164eecf974f0",
+  "strict_constraints": 47,
+  "scope": "New complex program independently replayed. The unchanged PR493 bit operator and inherited all-size compiler, common-label, Lemma A realization, restored-row, precision/tape and analytic-transfer contracts remain dependencies. No unconditional multiplication bound or fresh Lean certification is claimed.",
+  "stages": [
+    {
+      "stage": "retiming",
+      "exit": 0,
+      "seconds": 1.2815023609996388
+    },
+    {
+      "stage": "construct",
+      "exit": 0,
+      "seconds": 1.4624863200001528
+    },
+    {
+      "stage": "scalar",
+      "exit": 0,
+      "seconds": 2.210491918000116
+    },
+    {
+      "stage": "emit-local",
+      "exit": 0,
+      "seconds": 1.223351287999776
+    },
+    {
+      "stage": "phases",
+      "exit": 0,
+      "seconds": 211.44370927199998
+    },
+    {
+      "stage": "adapters",
+      "exit": 0,
+      "seconds": 1.207501228000183
+    },
+    {
+      "stage": "parent-integration",
+      "exit": 0,
+      "seconds": 1.3171464899996863
+    },
+    {
+      "stage": "parent-replay",
+      "exit": 0,
+      "seconds": 10.368229189999965
+    },
+    {
+      "stage": "emit-async",
+      "exit": 0,
+      "seconds": 5.20180395899979
+    },
+    {
+      "stage": "independent-async",
+      "exit": 0,
+      "seconds": 34.75679533199991
+    },
+    {
+      "stage": "invoice",
+      "exit": 0,
+      "seconds": 2.3023407629998474
+    },
+    {
+      "stage": "two-moments-assembly",
+      "exit": 0,
+      "seconds": 0.5338237450000634
+    }
+  ],
+  "package_manifest_sha256": "ed717a3191ab55d9863d435d17c3f25ea5714bfe6ad4b0c288e824517bd0226a"
+}

@@ -1,0 +1,38 @@
+RUN compiler-version
+PASS compiler-version
+RUN boost-header-trace
+PASS boost-header-trace
+RUN boost-arbitrary-integer
+PASS boost-arbitrary-integer
+RUN complete493
+RUN complete484
+PASS complete493
+RUN independent493-local-owners
+PASS independent493-local-owners
+RUN independent493-invoice
+PASS independent493-invoice
+RUN guarded-lg_instances
+RUN guarded-lg_e2e
+PASS complete484
+PASS guarded-lg_instances
+PASS guarded-lg_e2e
+RUN rebuild-retimed
+Traceback (most recent call last):
+  File "/home/user/w507/research/r489-partial-own-kernel84/verify.py", line 73, in <module>
+    py('rebuild-retimed',CODE/'rebuild_retimed.py',COMPLEX,OUT/'complex/gauge80-kernel42',ROOT/'data/RETIME-FRAMES.json.gz',OUT/'retimed/gauge80-kernel42')
+    ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/w507/research/r489-partial-own-kernel84/verify.py", line 28, in py
+    def py(name,p,*args,**kwargs):run(name,[sys.executable,'-B',p,*args],**kwargs)
+                                  ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/w507/research/r489-partial-own-kernel84/verify.py", line 27, in run
+    record(name,r.returncode,t,log)
+    ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/user/w507/research/r489-partial-own-kernel84/verify.py", line 23, in record
+    assert rc==0,(name,log.read_text()[-6000:]);print('PASS',name,flush=True)
+           ^^^^^
+AssertionError: ('rebuild-retimed', 'PASS construct-partial-own\nPASS selection-mutations\nPASS apply-kernel-selection\nPASS unretimed-scalar-frame\nPASS unretimed-emit-both-orientations\nTraceback (most recent call last):\n  File "/home/user/w507/research/r489-partial-own-kernel84/code/rebuild_retimed.py", line 50, in <module>\n    run(\'apply-frame-map\',HERE/\'apply_retime.py\',U/\'split-centres/FULL-WORD.json.gz\',M,sc/\'FULL-WORD.json.gz\')\n    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File "/home/user/w507/research/r489-partial-own-kernel84/code/rebuild_retimed.py", line 28, in run\n    assert p.returncode==0,(name,log.read_text()[-4000:])\n           ^^^^^^^^^^^^^^^\nAssertionError: (\'apply-frame-map\', \'Traceback (most recent call last):\\n  File "/home/user/w507/research/r489-partial-own-kernel84/code/apply_retime.py", line 60, in <module>\\n    if __name__==\\\'__main__\\\':main(*map(Path,sys.argv[1:4]))\\n                            ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File "/home/user/w507/research/r489-partial-own-kernel84/code/apply_retime.py", line 46, in main\\n    assert not out.exists();w=json.loads(gzip.decompress(src.read_bytes()));p=json.loads(gzip.decompress(mapfile.read_bytes()));assert hashlib.sha256(canonical(w)).hexdigest()==p[\\\'source_word_json_sha256\\\'];z=copy.deepcopy(w)\\n                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nAssertionError\\n\')\n')
+
+real	18m49.339s
+user	32m14.231s
+sys	2m38.833s
+EXIT 1

@@ -1,0 +1,30 @@
+RUN retiming
+PASS retiming
+RUN construct
+PASS construct
+RUN scalar
+PASS scalar
+RUN emit-local
+PASS emit-local
+RUN phases
+PASS phases
+RUN adapters
+PASS adapters
+RUN parent-integration
+PASS parent-integration
+RUN parent-replay
+PASS parent-replay
+RUN emit-async
+PASS emit-async
+RUN independent-async
+PASS independent-async
+RUN invoice
+PASS invoice
+RUN two-moments-assembly
+PASS two-moments-assembly
+PASS_CONDITIONAL_ASYNCHRONOUS_COMPLEX_DERIVATIVE kappa 0.001372554837726243
+
+real	4m33.385s
+user	4m29.383s
+sys	0m1.059s
+EXIT 0

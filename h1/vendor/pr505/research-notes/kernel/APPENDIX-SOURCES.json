@@ -1,0 +1,112 @@
+[
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Combinatorics/MatroidCounting/CommonBases.lean",
+    "working_sha256": "0f2d97183b830e8900a73c5637a6c243b03eb817cf514487b0db83db94434484",
+    "matches": [
+      {
+        "name": "greedyOracle_correct",
+        "lines": [
+          10965
+        ]
+      },
+      {
+        "name": "greedyOracle_rank",
+        "lines": [
+          11000
+        ]
+      },
+      {
+        "name": "pair_rank_parallel",
+        "lines": [
+          549
+        ]
+      },
+      {
+        "name": "pair_rank_nonparallel",
+        "lines": [
+          556
+        ]
+      }
+    ],
+    "status": "Direct source inspection; no fresh Lean kernel audit in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Topology/ArtinGroups/Cancellation/BlockPivot.lean",
+    "working_sha256": "d3a8dbe1f5b68b8ebde555a1f85be1f655c20d6195a857135347aa88c1560c39",
+    "matches": [
+      {
+        "name": "homotopy_square",
+        "lines": [
+          108
+        ]
+      },
+      {
+        "name": "homotopy_retract",
+        "lines": [
+          118
+        ]
+      },
+      {
+        "name": "remainder_retained",
+        "lines": [
+          198
+        ]
+      }
+    ],
+    "status": "Direct source inspection; no fresh Lean kernel audit in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/NumberTheory/TwoPoint/Walks/ColumnRankRelations.lean",
+    "working_sha256": "535603fcb618d881bb0dc829fed17790f697c7dd90fa06153b0efe8605fc1f46",
+    "matches": [
+      {
+        "name": "columnDifference_disjoint_minor",
+        "lines": [
+          94
+        ]
+      }
+    ],
+    "status": "Direct source inspection; no fresh Lean kernel audit in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Computability/FourierCircuit/TensorTools.lean",
+    "working_sha256": "40f36b086973e91bdbb9b94184e866375793e45ad57da5dd5c60b66d83542cf8",
+    "status": "Direct source inspection, not fresh Lean certification in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Computability/FourierCircuit/SparseShear.lean",
+    "working_sha256": "1a711340e5b75cf5b94909659e97becf1158bf4414770392d09e14de0549af8c",
+    "status": "Direct source inspection, not fresh Lean certification in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Computability/FourierCircuit/PivotJoin.lean",
+    "working_sha256": "06a9a4bdbdc3903dc021a2a8a402e5b67ee25b84a898339efbb7b747339ab389",
+    "status": "Direct source inspection, not fresh Lean certification in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Computability/FourierCircuit/MonomialFeedback.lean",
+    "working_sha256": "534b24551437a70259fd11916ec9bfd114f4353d225d965be401e3ab28defaa0",
+    "status": "Direct source inspection, not fresh Lean certification in this round"
+  },
+  {
+    "repository": "https://github.com/openai/math",
+    "revision": "adc7f1241b42e322a6451854ab7e4b4c146bf78a",
+    "relative_path": "lean/OAI/Computability/FourierCircuit/WordScheduling.lean",
+    "working_sha256": "0f1b0c89091f6acc5310e95c07102792749a38b0e35a760b7feae25682ef2713",
+    "status": "Direct source inspection, not fresh Lean certification in this round"
+  }
+]

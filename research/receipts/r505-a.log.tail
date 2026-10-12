@@ -1,0 +1,32 @@
+RUN construct
+PASS construct
+RUN scalar
+PASS scalar
+RUN emit-local
+PASS emit-local
+RUN phases
+PASS phases
+RUN adapters
+PASS adapters
+RUN parent-integration
+PASS parent-integration
+RUN parent-replay
+PASS parent-replay
+RUN emit-async
+PASS emit-async
+RUN independent-async
+PASS independent-async
+RUN invoice
+PASS invoice
+RUN two-moments-assembly
+PASS two-moments-assembly
+Traceback (most recent call last):
+  File "/home/user/integers/runs/pkg505/verify.py", line 47, in <module>
+    for key in ['kappa','complex_lower','bit_lower','template_sha256']:assert result[key]==e[key],key
+                                                                              ^^^^^^^^^^^^^^^^^^^
+AssertionError: template_sha256
+
+real	4m24.968s
+user	4m20.134s
+sys	0m2.736s
+EXIT 1

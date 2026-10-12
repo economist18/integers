@@ -1,0 +1,145 @@
+{
+  "status": "PASS_H1_ASYNC_RETIMED_WHOLE_OWNER_COMPOSITION",
+  "kappa": "68479443547277/50000000000000000",
+  "kappa_decimal": "0.001369588870945540",
+  "python": "3.14.6",
+  "manifest_sha256": "8bf65526eeebdb0f8e9027d6916d46e5d5104bb076eca100fdecc277b4c9c65e",
+  "exact_math_sha256": "7ffe1693885c3d7e38b75b181ecb8dee34916a82a5fab15c9e56e4d81f77bd13",
+  "steps": [
+    {
+      "name": "compiler-version",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 0.003,
+      "log_sha256": "88b7c4b67564a146863224148116065fee418539f0a408f3636a68f3bde51805"
+    },
+    {
+      "name": "boost-header-trace",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 2.123,
+      "log_sha256": "ea38a5fc176edf39e4462ab0e1521a5ac38079e1312861aada87f7faab513c09"
+    },
+    {
+      "name": "boost-arbitrary-integer",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 0.003,
+      "log_sha256": "45ab3b5e33ea24fdb1b557c142c208ab46bac2282e541e0e309598d8baec2e62"
+    },
+    {
+      "name": "complete493",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 214.32,
+      "log_sha256": "32449fac5aae6e6e00375c16e59b61597ae498ec95ecb4dac80a713c6ee6905a"
+    },
+    {
+      "name": "independent493-local-owners",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 7.606,
+      "log_sha256": "0c2ac175eb853d98fcde7a4b0a6a3c0a8dbbbe13e5987e85881d6260204a5eb7"
+    },
+    {
+      "name": "independent493-invoice",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 0.894,
+      "log_sha256": "cb57bdb1435b7f1b4407984fbc6ecf56503b1b14f6e4a9eb68b164ca9259209c"
+    },
+    {
+      "name": "complete484",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 1077.897,
+      "log_sha256": "24e8e4ab71aac9a0c59048e784fd83823df375c9f0bd00a3ddd06efa68bc350a"
+    },
+    {
+      "name": "rebuild-retimed",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 827.552,
+      "log_sha256": "1f66cfa0e7fd821502745744e6d60605be5b3d69a5629878660b719666cc5e31"
+    },
+    {
+      "name": "independent-retimed-frames",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 3.642,
+      "log_sha256": "62db6a8bd6e091d937ae3dfebf3c1523fbfcc817f9cc37990e9c2e1e53f14547"
+    },
+    {
+      "name": "retimed-guarded-lg_instances",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 465.612,
+      "log_sha256": "c1c0f0d4f31473fb1d7fccdb3db140c7a1c94dfe1bcf464a33e4d84a83d19bd6"
+    },
+    {
+      "name": "retimed-guarded-lg_e2e",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 154.084,
+      "log_sha256": "1a16211b74f3697618dd6233795427c5d19c8e96978f7ac1a7115be016839d8b"
+    },
+    {
+      "name": "emit-async",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 5.067,
+      "log_sha256": "dc7dfc22251b89e6cc849d22d31b2e549ef869e2babd358196a972b8b9e01358"
+    },
+    {
+      "name": "independent-async",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 26.759,
+      "log_sha256": "dd99daaa21d2a086255e329110b3ca78e05add45442c469047f58bcc56b62966"
+    },
+    {
+      "name": "invoice",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 2.483,
+      "log_sha256": "0518a4aa312c91b54114baeb9b797533b0a50359b5ddcf48ec9b95405b170b7b"
+    },
+    {
+      "name": "two-moments-assembly",
+      "returncode": 0,
+      "expected_failure": false,
+      "seconds": 0.549,
+      "log_sha256": "6ba26e1b4302bdc8ded9ec207b734bb037ecf356a51f6b5b2d89c4fc8a6fb412"
+    },
+    {
+      "name": "neg-unretimed-profile-plan",
+      "returncode": 1,
+      "expected_failure": true,
+      "seconds": 4.047,
+      "log_sha256": "9f83c565ca26e273efe31a0fb95674ba5572d4699a49d85d02ed331bfd72d73e"
+    },
+    {
+      "name": "neg-corrupt-frame-map",
+      "returncode": 1,
+      "expected_failure": true,
+      "seconds": 0.201,
+      "log_sha256": "d5140ee56638755ee2d016a64b104d4e2cf55222b6a69659d346e9be57feb439"
+    },
+    {
+      "name": "neg-mutated-source-word",
+      "returncode": 1,
+      "expected_failure": true,
+      "seconds": 0.108,
+      "log_sha256": "4641ecd5bba7840868ad2dc67a9aa61a795560a69f678239ef742008e9aa0190"
+    },
+    {
+      "name": "neg-owner-outside-window",
+      "returncode": 1,
+      "expected_failure": true,
+      "seconds": 1.348,
+      "log_sha256": "80ee9e258948735d15c6e04fe81703341d22c87c6eae1478d6637916aad2cd31"
+    }
+  ],
+  "seconds": 2572.596,
+  "scope": "Conditional finite witness. Both suppliers rebuilt fresh; retimed word fully recompiled and audited; asynchronous owner map, controller, invoice and 47 strict outer inequalities checked. Inherited all-size compiler, mutable-basis/common-label, PR484 Lemma A realization, restored-row, precision/tape and analytic-transfer contracts remain assumptions."
+}

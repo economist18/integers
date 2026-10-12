@@ -1,0 +1,148 @@
+[
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/gk_word.py",
+    "sha256": "f027a9273bcf4e0971258c160b7d3b3c196366b32a529cff6e6a0e666b03826b",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/gk_common.py",
+    "sha256": "e68d190fd436b2f3955decb590adb53344d5d4ea0a19d62d86df1e4b55ecd198",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/audit_gk.py",
+    "sha256": "cb79c6b788333a031e14c7f134823f5f6147d7f1dcc6e5e3b1420743c32f8ebc",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/emit_gk.py",
+    "sha256": "4e415bff1d9f154496ed38e6889929b600aa0f3d583a375e8ca257ad8f51fa23",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/adapters_gk.py",
+    "sha256": "a8d6d9ccf20c261cb0b216baa9906f2f7689e1bb1dca070313a60b2cb6d3043c",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/integrate_gk.py",
+    "sha256": "2e807893180a3716b36a81f1a7d933bd55f2299489b6f236ba5c644d87739209",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/replay_gk.py",
+    "sha256": "2422b44fc2fb4742bb575572337158a15fb6831630f8746a1c7ee3133e0ee2e3",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/code/onehost_gk.py",
+    "sha256": "416b318c1b6b8c7b72e24713b1b18d8772ec368e042a321b4418c63a74711590",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/split-centres-global/code/complex_phases_full.py",
+    "sha256": "0f2795aaffafe0c64d77f3748ef2109a3c42c58da867e4cf269a0a8cb6109466",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/split-centres-global/vendor/clifford_exact.py",
+    "sha256": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "vendor/complex/e8-complex-gauge-kernel/data/selections/gauge80-kernel42.json",
+    "sha256": "436e4acadee227dbfcb66386c9ccaa38e68054e8ed4870bb174eeb41363375bb",
+    "origin": "PR496 pinned vendor of PR484; unchanged"
+  },
+  {
+    "path": "inputs/work/complex-network/hamming/PACKET-PROGRAMS.json.gz",
+    "sha256": "d833ae0390d165d7da0c639a3c7aeb77156c2ddb52447087cb49b9d03b19e9b9",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/complex-network/hamming/PROTOTYPE.json",
+    "sha256": "b155f101a2b7ec8cfc4e7b6e7147b2d51f0dc31d3ea3499bdfa79d399a76be47",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/complex-nine-native/DATA-PHASES.json",
+    "sha256": "f621f6d4296cb215f334830356c5f79fe10d6d04d15b3ccda76ba0885ab67d0a",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/complex-nine-native/GLOBAL-TEMPLATE.json.gz",
+    "sha256": "1b84904a31a733aab9bfdda3f528c06719f590d2133a43687a8bded955dc991e",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/higher-stage-e8/verified/gcert1-e8-retimed.json.gz",
+    "sha256": "77b0c0fa19ef3da1c7316010e13493aa5eea1a50c3506eddc08f7480e659878b",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/odd-stages/clifford_exact.py",
+    "sha256": "2982ead07721e83358dc67c6f49c2b4c16a236a6bebdfd72f58221be1f5d0962",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/pr361/code/engines/base_two_moment.py",
+    "sha256": "aee70c242a2f1d225528fabe2002e1564d1dc884797c07d28a831c7878ee9098",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/pr361/code/engines/moment.py",
+    "sha256": "81cbc864e106418fc7854322746f72180cb8110ff39f74450a3b8d55a82c1482",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/pr361/code/engines/outer.py",
+    "sha256": "c1ebb52163a7219504c728a5c2b098bf1e50bf20148a2879c5a74c3cadc7c03c",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/work/pr370-source/research/e8-bit/data/bit/bitE8-r865.json.gz",
+    "sha256": "1fb726ea3818fe0837cceb0dd22a71a0814f064e5e781628104610d6468e0e55",
+    "origin": "Pinned parent reconstruction input, inherited PR433/425/370/361"
+  },
+  {
+    "path": "inputs/BASE-WORD.json.gz",
+    "sha256": "da4c5007092fd9456403179ef2a4391aef9fc5310e3eec5f2ab6c49b24147387",
+    "origin": "PR433 base before gauge80-kernel42; preserved cached input"
+  },
+  {
+    "path": "inputs/ASYNC-3.json",
+    "sha256": "8d16c05f4b3239fb5f9ec93958c9436c0cc0c76f6d4899a12bce5b84007d0893",
+    "origin": "New frozen asynchronous witness; optimizer not trusted"
+  },
+  {
+    "path": "inputs/ASYNC-OWNERS.json.gz",
+    "sha256": "52cb8c2b5869b429e3fe3b7a8b061792f020f6fad9f402dc4e4656110b9af068",
+    "origin": "New frozen asynchronous witness; optimizer not trusted"
+  },
+  {
+    "path": "code/emit_async.py",
+    "sha256": "3dca3efbce0e1b775801d072e64995472749553f6f7f3250bb6a898cfe117fbc",
+    "origin": "New emitter"
+  },
+  {
+    "path": "inputs/PR493-EXPECTED.json",
+    "sha256": "3494ba83280cc86548fe0cc6695c50d23e6b6ffca85aeb1a33337c1196e280cb",
+    "origin": "PR493 c3a9a436b84fe44fdc223a5784d84736d1c2d3c7 published unchanged bit supplier"
+  },
+  {
+    "path": "vendor/audit_scalar_invoice.py",
+    "sha256": "652eed65fe8f72ab486dcdbe761f401f8a2d43530f2fb0c5c7777be488cd4648",
+    "origin": "PR496 independent scalar invoice; unchanged"
+  },
+  {
+    "path": "references/PR496-PROOF.md",
+    "sha256": "144f1bf6952b3e31e99cf372a2cae9a13f96c9988808fe8a57ec70b09ee2007c",
+    "origin": "PR496 original conditional scope"
+  },
+  {
+    "path": "PROOF.md",
+    "sha256": "1fd10bedaf12f5221c1f22f4e508279ca1a16af7d0733dfdaac6a2a02a8a668a",
+    "origin": "New asynchronous sufficient composition argument; adapted in final package",
+    "source_snapshot_sha256": "a892161a798f2dd482cf77c9c6d7e8e405aeebf9f075fe1fc26101ab73a14937"
+  }
+]

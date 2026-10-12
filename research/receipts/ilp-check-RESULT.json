@@ -1,0 +1,61 @@
+{
+  "status": "PASS_PUBLISHED_RETIMINGS_ARE_ILP_OPTIMAL",
+  "results": {
+    "pr501-on-pr484": {
+      "optimum_profile": {
+        "1": 2385,
+        "2": 264,
+        "3": 530,
+        "4": 84,
+        "5": 270,
+        "6": 92,
+        "7": 1,
+        "8": 17
+      },
+      "objective": 6843.9911335372135,
+      "equals_published": true
+    },
+    "pr508-collapsed": {
+      "optimum_profile": {
+        "1": 2385,
+        "2": 248,
+        "3": 530,
+        "4": 88,
+        "5": 270,
+        "6": 96,
+        "7": 1,
+        "8": 17
+      },
+      "objective": 6852.069708009052,
+      "equals_published": true
+    },
+    "pr507-partial-own": {
+      "optimum_profile": {
+        "1": 2493,
+        "2": 224,
+        "3": 516,
+        "4": 84,
+        "5": 298,
+        "6": 64,
+        "7": 1,
+        "8": 17
+      },
+      "objective": 6802.420420249655,
+      "equals_published": true
+    },
+    "pr514-kernel92": {
+      "optimum_profile": {
+        "1": 2539,
+        "2": 160,
+        "3": 530,
+        "4": 88,
+        "5": 298,
+        "6": 68,
+        "7": 1,
+        "8": 17
+      },
+      "objective": 6802.49167093474,
+      "equals_published": true
+    }
+  }
+}

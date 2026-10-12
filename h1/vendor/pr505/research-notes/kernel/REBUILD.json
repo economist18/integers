@@ -1,0 +1,26 @@
+{
+  "base_sha256": "8b91151043fd61afe379314e4fb1e647cf9cd3cfe98462920d3faba5b1f268f2",
+  "base_parent_kernel79_sha256": "2e13b2dd1e1b0dfa341dbd57b91ee1758ad041cd5ce2e734bf2f9fd0bac155cb",
+  "base_derivation": "Remove the229 entering gauge-prefix gates from parent kernel79.A, empty start_extra and target_levels, rebuild cleanup as inverse of remaining A+B non-target gates. These exact base bytes are retained.",
+  "gk_sources": {
+    "gk_word.py": "f027a9273bcf4e0971258c160b7d3b3c196366b32a529cff6e6a0e666b03826b",
+    "gk_common.py": "e68d190fd436b2f3955decb590adb53344d5d4ea0a19d62d86df1e4b55ecd198"
+  },
+  "candidates": {
+    "COMPONENT": {
+      "selection": "COMPONENT-SELECTION.json",
+      "selection_sha256": "b682f7cff6de4f40bdadfc64a9ecb9b03a8d77dbf29be3748fa9d742dc894071",
+      "word_sha256": "8cd4987c01252cfa0adcc21b083d84aac89e7b25966299d7f8c26446043627de"
+    },
+    "JOINT-47": {
+      "selection": "JOINT-47-SELECTION.json",
+      "selection_sha256": "89ca715918bfbb04fad2eaee8a95a40324859cd0955512eb13077502e7d950e3",
+      "word_sha256": "f42a6761ec00798d75669b77006260bcaa75606dd652f802174c9e2b503dc98a"
+    },
+    "JOINT-51": {
+      "selection": "JOINT-51-SELECTION.json",
+      "selection_sha256": "7094bb647cc9951a5385660a9ec5f012a427fd118baacaf3d5e9f28cb436acc7",
+      "word_sha256": "b880f20ece93a26eaa649e3b895c76b224b5052775ad8dea9f2239825d36ce10"
+    }
+  }
+}

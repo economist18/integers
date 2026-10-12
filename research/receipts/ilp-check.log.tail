@@ -1,0 +1,10 @@
+PASS pr501-on-pr484 {'1': 2385, '2': 264, '3': 530, '4': 84, '5': 270, '6': 92, '7': 1, '8': 17}
+PASS pr508-collapsed {'1': 2385, '2': 248, '3': 530, '4': 88, '5': 270, '6': 96, '7': 1, '8': 17}
+PASS pr507-partial-own {'1': 2493, '2': 224, '3': 516, '4': 84, '5': 298, '6': 64, '7': 1, '8': 17}
+PASS pr514-kernel92 {'1': 2539, '2': 160, '3': 530, '4': 88, '5': 298, '6': 68, '7': 1, '8': 17}
+PASS start-independence: unretimed PR484 word -> PR501 optimum
+PASS control: non-nested frame rejected
+
+real	4m4.401s
+user	4m42.853s
+sys	0m3.401s

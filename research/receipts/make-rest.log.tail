@@ -1,0 +1,245 @@
+.test_exhaustive_small_modular_rotations_and_exceptional_repair) ... ok
+test_gather_is_exact_bit_permutation_including_boundary_offsets (test_short_guards.ShortGuards.test_gather_is_exact_bit_permutation_including_boundary_offsets) ... ok
+test_logarithmic_guards_make_repair_negligible (test_short_guards.ShortGuards.test_logarithmic_guards_make_repair_negligible) ... ok
+test_real_guard_boundaries_and_dirty_auxiliary_values (test_short_guards.ShortGuards.test_real_guard_boundaries_and_dirty_auxiliary_values) ... ok
+test_restricted_transpose_stream_bound_and_its_scope (test_short_guards.ShortGuards.test_restricted_transpose_stream_bound_and_its_scope) ... ok
+test_whole_reduction_preserves_spectators_and_restores_dirty_scratch (test_short_guards.ShortGuards.test_whole_reduction_preserves_spectators_and_restores_dirty_scratch) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.372s
+
+OK
+Checking test_signed_sparse_core.py
+test_all_small_orthogonality_degrees (test_signed_sparse_core.SignedSparseCore.test_all_small_orthogonality_degrees) ... ok
+test_complete_small_factors_and_rational_contract (test_signed_sparse_core.SignedSparseCore.test_complete_small_factors_and_rational_contract) ... ok
+test_invalid_and_expansion_limits (test_signed_sparse_core.SignedSparseCore.test_invalid_and_expansion_limits) ... ok
+test_large_counts_and_actual_vs_hypothetical (test_signed_sparse_core.SignedSparseCore.test_large_counts_and_actual_vs_hypothetical) ... ok
+test_redundant_factor_all_role_completion (test_signed_sparse_core.SignedSparseCore.test_redundant_factor_all_role_completion) ... ok
+test_slice_bound_in_characteristic_two (test_signed_sparse_core.SignedSparseCore.test_slice_bound_in_characteristic_two) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.209s
+
+OK
+Checking test_single_intersection.py
+test_binomial_expansion_and_feature_factor (test_single_intersection.SingleIntersection.test_binomial_expansion_and_feature_factor) ... ok
+test_exact_minor_witness_and_corruption (test_single_intersection.SingleIntersection.test_exact_minor_witness_and_corruption) ... ok
+test_feature_orbit_matches_full_matrix (test_single_intersection.SingleIntersection.test_feature_orbit_matches_full_matrix) ... ok
+test_fitting_rank_and_degenerate_ambient_form (test_single_intersection.SingleIntersection.test_fitting_rank_and_degenerate_ambient_form) ... ok
+test_identity_minor_bounds_against_explicit_binary_rank (test_single_intersection.SingleIntersection.test_identity_minor_bounds_against_explicit_binary_rank) ... ok
+test_invalid_parameters (test_single_intersection.SingleIntersection.test_invalid_parameters) ... ok
+test_odd_inclusion_cover (test_single_intersection.SingleIntersection.test_odd_inclusion_cover) ... ok
+test_small_spectra_match_exact_rational_matrices (test_single_intersection.SingleIntersection.test_small_spectra_match_exact_rational_matrices) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.154s
+
+OK
+Checking test_skip_clones.py
+test_clone_jobs_and_graph_code_require_current_source_pins (test_skip_clones.SkipCloneCertificateTests.test_clone_jobs_and_graph_code_require_current_source_pins) ... ok
+test_exact_certificate_and_strict_pr53_improvement (test_skip_clones.SkipCloneCertificateTests.test_exact_certificate_and_strict_pr53_improvement) ... ok
+test_profile_mass_and_compensated_negative_blocks_rejected (test_skip_clones.SkipCloneCertificateTests.test_profile_mass_and_compensated_negative_blocks_rejected) ... ok
+test_clone_replaces_the_whole_continuation_chain (test_skip_clones.WholeChainCloneTests.test_clone_replaces_the_whole_continuation_chain) ... ok
+test_declared_addition_and_role_counts_cannot_override_actual_graph (test_skip_clones.WholeChainCloneTests.test_declared_addition_and_role_counts_cannot_override_actual_graph) ... ok
+test_invalid_parent_and_provider_are_rejected (test_skip_clones.WholeChainCloneTests.test_invalid_parent_and_provider_are_rejected) ... ok
+test_named_provider_operand_must_partition_the_parent_exactly (test_skip_clones.WholeChainCloneTests.test_named_provider_operand_must_partition_the_parent_exactly) ... ok
+test_original_scalar_frames_are_preserved_in_every_round (test_skip_clones.WholeChainCloneTests.test_original_scalar_frames_are_preserved_in_every_round) ... ok
+test_provider_capacity_and_matching_collisions_are_rejected (test_skip_clones.WholeChainCloneTests.test_provider_capacity_and_matching_collisions_are_rejected) ... ok
+test_rebuilt_finite_fixtures_have_expected_clone_and_role_counts (test_skip_clones.WholeChainCloneTests.test_rebuilt_finite_fixtures_have_expected_clone_and_role_counts) ... ok
+test_wrong_first_chain_use_and_stale_graph_pins_are_rejected (test_skip_clones.WholeChainCloneTests.test_wrong_first_chain_use_and_stale_graph_pins_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 27.043s
+
+OK
+Checking test_skip_strips.py
+test_all_strict_constraints_and_dyadic_bracket (test_skip_strips.SkipStripTests.test_all_strict_constraints_and_dyadic_bracket) ... ok
+test_assembly_boundary_rejected (test_skip_strips.SkipStripTests.test_assembly_boundary_rejected) ... ok
+test_balanced_transfer_negative_controls (test_skip_strips.SkipStripTests.test_balanced_transfer_negative_controls) ... ok
+test_corrupted_pair_coverage_rejected (test_skip_strips.SkipStripTests.test_corrupted_pair_coverage_rejected) ... ok
+test_deterministic_prime_and_minor_gaps (test_skip_strips.SkipStripTests.test_deterministic_prime_and_minor_gaps) ... ok
+test_exact_recovery_explains_primary_modular_failures (test_skip_strips.SkipStripTests.test_exact_recovery_explains_primary_modular_failures) ... ok
+test_float_saving_rejected (test_skip_strips.SkipStripTests.test_float_saving_rejected) ... ok
+test_frozen_certificate (test_skip_strips.SkipStripTests.test_frozen_certificate) ... ok
+test_independent_cost_rows (test_skip_strips.SkipStripTests.test_independent_cost_rows) ... ok
+test_mass_corruption_rejected (test_skip_strips.SkipStripTests.test_mass_corruption_rejected) ... ok
+test_mismatched_source_hash_rejected (test_skip_strips.SkipStripTests.test_mismatched_source_hash_rejected) ... ok
+test_omitted_paid_copy_detected (test_skip_strips.SkipStripTests.test_omitted_paid_copy_detected) ... ok
+test_pinned_links_use_distinct_donors_and_uses (test_skip_strips.SkipStripTests.test_pinned_links_use_distinct_donors_and_uses) ... ok
+test_real_lower_bound_exclusions (test_skip_strips.SkipStripTests.test_real_lower_bound_exclusions) ... ok
+test_recovery_and_every_pair_charged (test_skip_strips.SkipStripTests.test_recovery_and_every_pair_charged) ... ok
+test_restriction_tree_mutation_rejected (test_skip_strips.SkipStripTests.test_restriction_tree_mutation_rejected) ... ok
+test_skip_layout_is_exact_leave_one_out (test_skip_strips.SkipStripTests.test_skip_layout_is_exact_leave_one_out) ... ok
+test_skip_layout_nests_prefix_consumers (test_skip_strips.SkipStripTests.test_skip_layout_nests_prefix_consumers) ... ok
+test_skip_strips_reduce_physical_roles (test_skip_strips.SkipStripTests.test_skip_strips_reduce_physical_roles) ... ok
+test_zero_recovered_pivot_rejected (test_skip_strips.SkipStripTests.test_zero_recovered_pivot_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.461s
+
+OK
+Checking test_skip_suffix.py
+test_all_strict_constraints_and_dyadic_bracket (test_skip_suffix.SkipSuffixTests.test_all_strict_constraints_and_dyadic_bracket) ... ok
+test_assembly_boundary_rejected (test_skip_suffix.SkipSuffixTests.test_assembly_boundary_rejected) ... ok
+test_balanced_transfer_negative_controls (test_skip_suffix.SkipSuffixTests.test_balanced_transfer_negative_controls) ... ok
+test_corrupted_pair_coverage_rejected (test_skip_suffix.SkipSuffixTests.test_corrupted_pair_coverage_rejected) ... ok
+test_deterministic_prime_and_minor_gaps (test_skip_suffix.SkipSuffixTests.test_deterministic_prime_and_minor_gaps) ... ok
+test_exact_recovery_explains_primary_modular_failures (test_skip_suffix.SkipSuffixTests.test_exact_recovery_explains_primary_modular_failures) ... ok
+test_float_saving_rejected (test_skip_suffix.SkipSuffixTests.test_float_saving_rejected) ... ok
+test_frozen_certificate (test_skip_suffix.SkipSuffixTests.test_frozen_certificate) ... ok
+test_independent_cost_rows (test_skip_suffix.SkipSuffixTests.test_independent_cost_rows) ... ok
+test_mass_corruption_rejected (test_skip_suffix.SkipSuffixTests.test_mass_corruption_rejected) ... ok
+test_mismatched_source_hash_rejected (test_skip_suffix.SkipSuffixTests.test_mismatched_source_hash_rejected) ... ok
+test_omitted_paid_copy_detected (test_skip_suffix.SkipSuffixTests.test_omitted_paid_copy_detected) ... ok
+test_pinned_links_use_distinct_donors_and_uses (test_skip_suffix.SkipSuffixTests.test_pinned_links_use_distinct_donors_and_uses) ... ok
+test_real_lower_bound_exclusions (test_skip_suffix.SkipSuffixTests.test_real_lower_bound_exclusions) ... ok
+test_recovery_and_every_pair_charged (test_skip_suffix.SkipSuffixTests.test_recovery_and_every_pair_charged) ... ok
+test_restriction_tree_mutation_rejected (test_skip_suffix.SkipSuffixTests.test_restriction_tree_mutation_rejected) ... ok
+test_skip_layout_is_exact_leave_one_out (test_skip_suffix.SkipSuffixTests.test_skip_layout_is_exact_leave_one_out) ... ok
+test_skip_layout_nests_prefix_consumers (test_skip_suffix.SkipSuffixTests.test_skip_layout_nests_prefix_consumers) ... ok
+test_skip_strips_reduce_physical_roles (test_skip_suffix.SkipSuffixTests.test_skip_strips_reduce_physical_roles) ... ok
+test_zero_recovered_pivot_rejected (test_skip_suffix.SkipSuffixTests.test_zero_recovered_pivot_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.556s
+
+OK
+Checking test_small_block_witness.py
+test_color_classes_are_disjoint_affine_planes (test_small_block_witness.SmallBlockWitness.test_color_classes_are_disjoint_affine_planes) ... ok
+test_explicit_rational_gram_for_all_three_signature_types (test_small_block_witness.SmallBlockWitness.test_explicit_rational_gram_for_all_three_signature_types) ... ok
+test_target_scope_and_negative_deficit (test_small_block_witness.SmallBlockWitness.test_target_scope_and_negative_deficit) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.013s
+
+OK
+Checking test_sparse_fusion.py
+test_bounded_controls_and_central_frame_obstruction (test_sparse_fusion.SparseFusion.test_bounded_controls_and_central_frame_obstruction) ... ok
+test_collective_symmetry_as_full_operators (test_sparse_fusion.SparseFusion.test_collective_symmetry_as_full_operators) ... ok
+test_every_phase_signature_and_rank_lower_bound (test_sparse_fusion.SparseFusion.test_every_phase_signature_and_rank_lower_bound) ... ok
+test_mixing_criterion_against_fourier_blocks (test_sparse_fusion.SparseFusion.test_mixing_criterion_against_fourier_blocks) ... ok
+test_six_to_one_as_full_operators (test_sparse_fusion.SparseFusion.test_six_to_one_as_full_operators) ... ok
+test_targets_require_a_substantial_new_primitive (test_sparse_fusion.SparseFusion.test_targets_require_a_substantial_new_primitive) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.901s
+
+OK
+Checking test_split_skip.py
+test_corrupted_profile_rejected (test_split_skip.SplitSkipTests.test_corrupted_profile_rejected) ... ok
+test_duplicate_clone_provider_rejected (test_split_skip.SplitSkipTests.test_duplicate_clone_provider_rejected) ... ok
+test_general_singleton_pair_scalar_identity (test_split_skip.SplitSkipTests.test_general_singleton_pair_scalar_identity) ... ok
+test_independent_exact_arithmetic (test_split_skip.SplitSkipTests.test_independent_exact_arithmetic) ... PASS independent rational moment and seven margins
+W=156805076; bit=1149772399/25000000000000; kappa=4598878089/100000000000000
+moment gap=1.150279201787867e-15; absorption gap=4.62457962748566e-15
+ok
+test_invalid_permutations_rejected (test_split_skip.SplitSkipTests.test_invalid_permutations_rejected) ... ok
+test_overlapping_clone_partition_rejected (test_split_skip.SplitSkipTests.test_overlapping_clone_partition_rejected) ... ok
+test_partial_clone_chain_rejected (test_split_skip.SplitSkipTests.test_partial_clone_chain_rejected) ... ok
+test_rank_mass_and_paid_endpoint (test_split_skip.SplitSkipTests.test_rank_mass_and_paid_endpoint) ... ok
+test_stale_graph_pin_rejected (test_split_skip.SplitSkipTests.test_stale_graph_pin_rejected) ... ok
+test_strict_grid_and_final_margins (test_split_skip.SplitSkipTests.test_strict_grid_and_final_margins) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 4.189s
+
+OK
+Checking test_stage_pair.py
+test_affected_edge_accounting_matches_full_recomputation (test_stage_pair.StagePair.test_affected_edge_accounting_matches_full_recomputation) ... ok
+test_block_overlap_including_dependent_labels (test_stage_pair.StagePair.test_block_overlap_including_dependent_labels) ... ok
+test_boundary_only_general_frame_change_cannot_help (test_stage_pair.StagePair.test_boundary_only_general_frame_change_cannot_help) ... ok
+test_cross_factor_direction_is_not_a_product (test_stage_pair.StagePair.test_cross_factor_direction_is_not_a_product) ... ok
+test_full_rational_score_and_only_central_excess (test_stage_pair.StagePair.test_full_rational_score_and_only_central_excess) ... ok
+test_modular_rank_is_only_a_lower_bound (test_stage_pair.StagePair.test_modular_rank_is_only_a_lower_bound) ... ok
+test_tiny_winners_have_unfavorable_scaling (test_stage_pair.StagePair.test_tiny_winners_have_unfavorable_scaling) ... ok
+test_true_physical_join_and_arbitrary_scratch (test_stage_pair.StagePair.test_true_physical_join_and_arbitrary_scratch) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 19.571s
+
+OK
+Checking test_stronger_screens.py
+test_balanced_graph_and_exhaustive_negative (test_stronger_screens.StrongerScreens.test_balanced_graph_and_exhaustive_negative) ... ok
+test_fractional_certificate_rejects_errors_and_floats (test_stronger_screens.StrongerScreens.test_fractional_certificate_rejects_errors_and_floats) ... ok
+test_fractional_fano_witness_uses_shared_undirected_capacities (test_stronger_screens.StrongerScreens.test_fractional_fano_witness_uses_shared_undirected_capacities) ... ok
+test_meet_in_middle_matches_9294_dense_complete_assignments (test_stronger_screens.StrongerScreens.test_meet_in_middle_matches_9294_dense_complete_assignments) ... ok
+test_search_budget_and_invalid_prescriptions_do_not_close_a_model (test_stronger_screens.StrongerScreens.test_search_budget_and_invalid_prescriptions_do_not_close_a_model) ... ok
+test_signed_lift_and_exact_edge_discrepancy (test_stronger_screens.StrongerScreens.test_signed_lift_and_exact_edge_discrepancy) ... ok
+test_six_local_operations_and_inverses (test_stronger_screens.StrongerScreens.test_six_local_operations_and_inverses) ... ok
+test_wrong_characteristic_zero_action_is_not_a_certificate (test_stronger_screens.StrongerScreens.test_wrong_characteristic_zero_action_is_not_a_certificate) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 9.265s
+
+OK
+Checking test_subset_core_family.py
+test_binary_support_for_four_sizes (test_subset_core_family.SubsetCoreFamily.test_binary_support_for_four_sizes) ... ok
+test_budget_brackets_direct_rank_saving (test_subset_core_family.SubsetCoreFamily.test_budget_brackets_direct_rank_saving) ... ok
+test_complex_companion_support_and_guard_charge (test_subset_core_family.SubsetCoreFamily.test_complex_companion_support_and_guard_charge) ... ok
+test_disjoint_rectangle_partitions (test_subset_core_family.SubsetCoreFamily.test_disjoint_rectangle_partitions) ... ok
+test_existing_triple_counts_recovered (test_subset_core_family.SubsetCoreFamily.test_existing_triple_counts_recovered) ... ok
+test_explicit_factor_and_rational_projectors (test_subset_core_family.SubsetCoreFamily.test_explicit_factor_and_rational_projectors) ... ok
+test_hypothetical_targets_need_both_interfaces (test_subset_core_family.SubsetCoreFamily.test_hypothetical_targets_need_both_interfaces) ... ok
+test_invalid_and_oversized_inputs (test_subset_core_family.SubsetCoreFamily.test_invalid_and_oversized_inputs) ... ok
+test_redundant_center_is_charged_by_complete_compiler (test_subset_core_family.SubsetCoreFamily.test_redundant_center_is_charged_by_complete_compiler) ... ok
+test_seven_subset_positive_boundary (test_subset_core_family.SubsetCoreFamily.test_seven_subset_positive_boundary) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.213s
+
+OK
+Checking test_ternary_patch.py
+test_all_pinned_inputs_and_internal_references (test_ternary_patch.TernaryPatch.test_all_pinned_inputs_and_internal_references) ... ok
+test_assembly_parameters_and_every_derived_power (test_ternary_patch.TernaryPatch.test_assembly_parameters_and_every_derived_power) ... ok
+test_interface_and_retained_precision (test_ternary_patch.TernaryPatch.test_interface_and_retained_precision) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 15.837s
+
+OK
+Checking test_ternary_side.py
+test_complete_rational_frame_edges (test_ternary_side.TernarySideTest.test_complete_rational_frame_edges) ... ok
+test_exact_assembly_and_guard_reuse (test_ternary_side.TernarySideTest.test_exact_assembly_and_guard_reuse) ... ok
+test_global_signature_and_arbitrary_input_controls (test_ternary_side.TernarySideTest.test_global_signature_and_arbitrary_input_controls) ... ok
+test_packed_field_arithmetic_exhaustive (test_ternary_side.TernarySideTest.test_packed_field_arithmetic_exhaustive) ... ok
+test_resource_limits (test_ternary_side.TernarySideTest.test_resource_limits) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 16.410s
+
+OK
+Checking test_tune_routing.py
+test_combined_patch_includes_stopping_proof_and_setup (test_tune_routing.TunedRouting.test_combined_patch_includes_stopping_proof_and_setup) ... ok
+test_transfer_recipe_and_precision (test_tune_routing.TunedRouting.test_transfer_recipe_and_precision) ... ok
+test_witness_requires_both_extensions (test_tune_routing.TunedRouting.test_witness_requires_both_extensions) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.037s
+
+OK
+PASS all 82 test modules in isolated interpreters
+git apply --check --directory=upstream patches/frozen-154.patch
+git apply --check --directory=upstream patches/balanced-153.patch
+git apply --check --directory=upstream patches/same-network-129.patch
+git apply --check --directory=upstream patches/h46-111.patch
+git apply --check --directory=upstream patches/h46-109.patch
+git apply --check --directory=upstream patches/h46-108.patch
+git apply --check --directory=upstream patches/h46-rational.patch
+git apply --check --directory=upstream patches/nonadjacent-layout.patch
+git apply --check --directory=upstream patches/frozen-nonadjacent-107.patch
+git apply --check --directory=upstream patches/h46-nonadjacent-78.patch
+git apply --check --directory=upstream patches/h46-nonadjacent-76.patch
+git apply --check --directory=upstream patches/h46-shared-side-75.patch
+git apply --check --directory=upstream patches/h46-incidence-67.patch
+git apply --check --directory=upstream patches/h46-dag-63.patch
+git apply --check --directory=upstream patches/h46-shared-point.patch
+git apply --check --directory=upstream patches/h50-paired-59.patch
+git apply --check --directory=upstream patches/compact-control-34.patch
+git apply --check --directory=upstream patches/complex-compression-31.patch
+git apply --check --directory=upstream patches/ternary-30.patch
+git apply --check --directory=upstream patches/batched-23.patch
+
+real	10m34.266s
+user	10m7.219s
+sys	0m19.959s
+EXIT 2

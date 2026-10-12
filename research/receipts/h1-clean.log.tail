@@ -1,0 +1,53 @@
+RUN compiler-version
+PASS compiler-version
+RUN boost-header-trace
+PASS boost-header-trace
+RUN boost-arbitrary-integer
+PASS boost-arbitrary-integer
+RUN RUNcomplete493 
+complete484
+PASS complete493
+RUN independent493-local-owners
+PASS independent493-local-owners
+RUN independent493-invoice
+PASS independent493-invoice
+PASS complete484
+RUN rebuild-retimed
+PASS rebuild-retimed
+RUN independent-retimed-frames
+PASS independent-retimed-frames
+RUN retimed-guarded-lg_instances
+PASS retimed-guarded-lg_instances
+RUN retimed-guarded-lg_e2e
+PASS retimed-guarded-lg_e2e
+RUN emit-async
+PASS emit-async
+RUN independent-async
+PASS independent-async
+RUN invoice
+PASS invoice
+RUN two-moments-assembly
+PASS two-moments-assembly
+RUN neg-unretimed-profile-plan
+REJECTED (as required) neg-unretimed-profile-plan
+RUN neg-corrupt-frame-map
+REJECTED (as required) neg-corrupt-frame-map
+RUN neg-mutated-source-word
+REJECTED (as required) neg-mutated-source-word
+RUN neg-owner-outside-window
+REJECTED (as required) neg-owner-outside-window
+{
+  "status": "PASS_H1_ASYNC_RETIMED_WHOLE_OWNER_COMPOSITION",
+  "kappa": "68479443547277/50000000000000000",
+  "kappa_decimal": "0.001369588870945540",
+  "python": "3.14.6",
+  "manifest_sha256": "8bf65526eeebdb0f8e9027d6916d46e5d5104bb076eca100fdecc277b4c9c65e",
+  "exact_math_sha256": "7ffe1693885c3d7e38b75b181ecb8dee34916a82a5fab15c9e56e4d81f77bd13",
+  "seconds": 2572.596,
+  "scope": "Conditional finite witness. Both suppliers rebuilt fresh; retimed word fully recompiled and audited; asynchronous owner map, controller, invoice and 47 strict outer inequalities checked. Inherited all-size compiler, mutable-basis/common-label, PR484 Lemma A realization, restored-row, precision/tape and analytic-transfer contracts remain assumptions."
+}
+
+real	42m52.839s
+user	44m19.668s
+sys	3m35.315s
+EXIT 0
