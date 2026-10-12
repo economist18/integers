@@ -91,7 +91,7 @@ read from the rendered pages, not the API.
 
 # ROUND 2 ("try again") — summary
 
-## Best verified candidate: H3, κ = 795984451416673/5·10¹⁷ = 0.001591968902833346 (complex-bound)
+## Best verified candidate: H3, κ = 795984451416673/5·10¹⁷ = 0.001591968902833346 (complex-bound) — DUPLICATED by #551 and #552 (same κ), optimality corroborated by #557
 
 - **Construction.** Exact lifts-only frame retiming of #544's static44 complex word: 416 lifts,
   b = 1594507308884431019637/10²⁴. It is composed with #543's R420 bit word
@@ -141,3 +141,16 @@ All on Linux, with Python 3.14.6 unless noted:
    frames. Fixed-order frames are exhausted, so gains need more trace moves.
 3. **Settle #543's phase-B question.** If accepted, the complex side binds and complex
    improvements pay off directly.
+
+## Final status (round 2)
+
+H3 was certified, but **#551 (chafreaky) and #552 (Dugongue) published the identical κ first**, and
+#557 certifies the same frame ceiling. So no strict record survives from this session. Every
+improvement found (H1, H2, H3) was reached independently by other contributors within minutes to an
+hour.
+
+Durable contributions:
+- the exact frame-retiming ILP for gk-type and bitE8 words, validated against #534's search result;
+- independent reproductions of #505, #508, #514, #541, #543, #544 and #548;
+- the diagnosed platform-float reproduction failures in #501 and #507;
+- the negative results above.

@@ -167,3 +167,9 @@ ILP weight d·(73/d)^b0 with b0 = each word's own exact moment root (0.001371467
 - #548 local stages: static44 {1:2204,...} → lifted (PR534 port) {1:2284,2:456,3:488,4:168,...} → syndrome (same profile). Entropy fee: #548 lifted 19704.6/call vs exact 19690.8/call.
 - ILP lifts from #548's syndrome frames: no improvement (heuristic lifts lock in a worse configuration).
 - #548 idle remainders = #544's idle remainders; syndrome saves scalar ops only. Exact lifts + #548 idle gives the same b″ as H3. No b gain from composing.
+
+## H3 outcome after final queue check (~05:00 UTC): DUPLICATE
+- #551 (chafreaky, "subspace16 complex with full R420 replay") and #552 (Dugongue, "collective hyperplane waves and weighted response decoding") both report κ = 0.001591968902833346 — identical to H3. #557 (chafreaky) certifies a complete binary-frame ceiling for that word ("no next kappa tick with fixed owners"), independently corroborating the exact-ILP optimum.
+- Others in the same window: #550 (eumemic) 0.001591045666134196, #554 (rohanarun) 0.001591209947088545, #555 (eumemic) bit c 0.001733052823 (complex still binds), #549 (chafreaky) static44 packing ceiling < 0.000399% headroom.
+- H3 is therefore an independent confirmation, not a record. Not submitted as a record; `submission/PR-H3-DESCRIPTION.md` retained for reference only.
+- `make -k verify` on the H3 branch was still running (frontier531 cold523 replay) at handoff with no failures up to that point; log runs/h3-make-verify.log (not committed; runs/ ignored).

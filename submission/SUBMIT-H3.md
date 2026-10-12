@@ -1,3 +1,5 @@
+**STATUS: do not submit as a record. PR551 and PR552 published the identical κ 0.001591968902833346 first.**
+
 # Submitting the H3 PR (κ = 0.001591968902833346)
 
 No fork of CrocSwap/integer-mult-bounds exists under your account, and this session has read-only
